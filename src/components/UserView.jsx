@@ -1,10 +1,11 @@
 import React from 'react'
 import icon from '../assets/Pie Chart.png';
 import { libraryStats } from '../Data/libraryStats';
+import Musics from './Musics';
 const UserView = () => {
     return (
         <div className='flex flex-col'>
-            <div className='flex flex-col '>
+            <div className='flex flex-col bg-gradient-to-b from-gray-100 to-black '>
                 <div className='names w-full flex items-end'>
                     <div className='flex '>
                         <div className='w-4 h-4 rounded-full flex items-center justify-center'></div>
@@ -36,9 +37,10 @@ const UserView = () => {
                             )
                         })}
                     </div>
-
                 </div>
-
+            </div>
+            <div>
+                <Musics />
             </div>
         </div>
     )
