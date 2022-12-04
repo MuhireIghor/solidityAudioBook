@@ -30,7 +30,7 @@ const UserView = () => {
                         {libraryStats.map((lib, index) => {
                             return (
                                 <div key={index} className='flex gap-4'>
-                                    <div className={`w-4 h-4 rounded-full text-[${lib.color}]`}></div>
+                                    <div className={`w-4 h-4 rounded-full  z-10  bg-[${lib.color}]`}></div>
                                     <p>{lib.textDesc}</p>
 
                                 </div>
